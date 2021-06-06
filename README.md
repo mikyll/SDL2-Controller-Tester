@@ -89,7 +89,7 @@ This little application has been made while I was attending a tutorial to make g
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-GIF dimostrative
+Demo GIF
 
 ### Built With
 
@@ -203,7 +203,8 @@ Project Link: [https://github.com/mikyll/SDL2-Controller-Tester](https://github.
 * [Othneil Drew](https://github.com/othneildrew) for the amazing [README template](https://github.com/othneildrew/Best-README-Template).
 
 ## References
-* SDL2 installation tutorial - http://lazyfoo.net/SDL_tutorials/lesson01/windows/index.php
+* SDL2 installation tutorial (a bit outdated, so be careful) - [LazyFoo SDL installation](http://lazyfoo.net/SDL_tutorials/lesson01/windows/index.php)
+* Wonderful C game tutorials (starting from SDL basics) - [Parallel Realities Tutorials](https://www.parallelrealities.co.uk/)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
