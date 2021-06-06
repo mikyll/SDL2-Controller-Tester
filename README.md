@@ -69,7 +69,7 @@ This little application has been made while I was attending a tutorial to make g
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#sdl2-installation">SDL2 Installation</a></li>
-        <li><a href="#project-build">Project Build</a></li>
+        <li><a href="#project-build-linux">Project Build (Linux)</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -111,6 +111,10 @@ To get a local copy up and running follow these simple steps.
 * At least one controller compatible with your OS
 
 ### SDL2 Installation
+#### Linux (Debian)
+The easiest way is to open a terminal and use Advanced Packaging Tool to install only the modules required using ```apt-get install libsdl2-dev``` or every one using ```apt-get install libsdl2-*```.
+Otherwise download the source code from [there](https://www.libsdl.org/release/SDL2-2.0.14.tar.gz), extract the content and cd to the main directory. Then run  ```./configure``` to configure the installation, ```make all``` to compile the source, and finally ```make install``` to install the package.
+
 #### Windows (MinGW)
 1. Download SDL2 source code .zip from [there](https://www.libsdl.org/release/SDL2-2.0.14.zip) and extract the content.
 2. Inside SDL2-2.0.14, depending on your OS, open the 32bit or 64bit directory, respectively **i686-w64-mingw32** or **x86_64-w64-mingw32**.
@@ -118,9 +122,6 @@ To get a local copy up and running follow these simple steps.
 4. Then, going back to our SDL2 directory, open the include subdirectory and copy the folder **SDL2** to the MinGW include subdirectory.
 **NB**: to compile a project which uses SLD2 libraries, you also need SDL2.dll, which can be found inside the bin subdirectory of the 32 or 64 bit version of the SDL2 root directory (SDL2-2.0.14, the one extracted from the archive). This one has to be put in the directory from which you compile the application.
 
-#### Linux (Debian)
-The easiest way is to open a terminal and use Advanced Packaging Tool to install only the modules required using ```apt-get install libsdl2-dev``` or every one using ```apt-get install libsdl2-*```.
-Otherwise download the source code from [there](https://www.libsdl.org/release/SDL2-2.0.14.tar.gz), extract the content and cd to the main directory. Then run  ```./configure``` to configure the installation, ```make all``` to compile the source, and finally ```make install``` to install the package.
 
 ### Project Build (Linux)
 
