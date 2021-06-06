@@ -1,0 +1,1 @@
+#define MAX_NUM_JOYSTICKS 4
