@@ -14,8 +14,6 @@ int main(int argc, char *argv[])
 	
 	while (1)
 	{
-		//prepareScene();
-		
 		doInput();
 		
 		for(i = 0; i < MAX_NUM_JOYSTICKS; i++)
