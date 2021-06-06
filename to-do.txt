@@ -1,2 +1,0 @@
--add sounds when connecting or disconnecting a device;
--add the graphic interface (which shows text for the input and a small interactive simulation, where you can move a 2D object).
