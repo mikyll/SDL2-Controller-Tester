@@ -72,6 +72,7 @@ This little application has been made while I was attending a tutorial to make g
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#sdl2-installation">SDL2 Installation</a></li>
+        <li><a href="#project-build">Project Build</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
