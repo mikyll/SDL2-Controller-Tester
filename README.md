@@ -45,6 +45,9 @@
 
   <p align="center">
 This little application has been made while I was attending a tutorial to make games in C using SDL2. Since my purpose will be to implement a game with both keyboard or controller input, I wanted to test which of my PS3 controller feature I could use (spoiler: each one).</i>
+<br />
+	<a href="https://github.com/mikyll/SDL2-Controller-Tester/blob/main/Documentation.md"><strong>Explore the docs »</strong></a>
+	<br />
 	<br />
 	<a href="https://github.com/mikyll/SDL2-Controller-Tester/issues">Report Bug</a>
 	·
@@ -91,10 +94,10 @@ GIF dimostrative
 
 #### Written:
 * in C
-* Using [SDL2](https://www.libsdl.org/)
+* using [SDL2](https://www.libsdl.org/)
 #### Tested:
 * on UNIX system (Debian 9.8 running on a VM)
-* With a PS3 Official Controller
+* with a PS3 Official Controller: Sony® DualShock 3
 
 
 
@@ -108,25 +111,35 @@ To get a local copy up and running follow these simple steps.
 * Git
 * SDL2
 
-### Installation
+### SDL2 Installation
+#### Windows
+#### Linux
 
-1. Download SDL2 frp, [Download Git](https://git-scm.com/download).
-2. Clone the repo.
+### Project Build
+
+1. Clone the repo.
    ```sh
    git clone https://github.com/mikyll/SDL2-Controller-Tester
    ```
-3. Download Unity Hub at [Download Unity](https://unity3d.com/get-unity/download).
-4. Install a proper Unity version (2020.2.1 or higher) at [Download Archive](https://unity3d.com/get-unity/download/archive) or from Unity Hub.
-5. Add the project directory on Unity Hub: Projects > Add > Select Directory.
+2. Install SDL2.
+   ```sh
+   sudo apt-get install sdl2-*
+   ```
+3. Compile the project using the makefile.
+   ```sh
+   make
+   ```
 
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-To test the prototype in multiplayer you can create a build for a standalone client, then enter PlayMode in the editor and connect the standalone application; otherwise you can create one build for the server and one for the client and connect several clients to the server.
+To use the application, simply connect one or more joystick via cable and run the executable. Each controller input will print on the standard output device the joystick ID and the button code or the direction in case of the analogic levers.
+To make the joystick rumble press the button 0 and 3 (respectively SELECT and START in the case of a PS3 controller) at the same time.
+The application even shows when a controlles is disconnected or when a new one is connected.
 
-For more examples, please refer to the [Documentation](https://github.com/mikyll/SDL2-Controller-Tester/blob/main/Documentation/Prototype%20Documentation.md).
+for more detailed information, please refer to the [Documentation](https://github.com/mikyll/SDL2-Controller-Tester/blob/main/Documentation/Prototype%20Documentation.md).
 
 
 
@@ -140,7 +153,8 @@ See the [open issues](https://github.com/mikyll/SDL2-Controller-Tester/issues) f
 
 ### Future developments
 * Sound effects when connecting or disconnecting a device.
-* GUI with text for details and an interactive demo.
+* GUI with text for details.
+* Interactive demo.
 
 
 <!-- CONTRIBUTING -->
@@ -178,8 +192,8 @@ Project Link: [https://github.com/mikyll/SDL2-Controller-Tester](https://github.
 * [Parallel Realities](https://www.parallelrealities.co.uk) for the lovely and super detailed tutorials involving game development in C using SDL2, from which I "stole" (actually I bought some of the tutorial, they're extremely cheap -just 1$ each one-) the project structure and the makefile.
 * [Othneil Drew](https://github.com/othneildrew) for the amazing [README template](https://github.com/othneildrew/Best-README-Template).
 
-
-
+## References
+* SDL2 installation tutorial - http://lazyfoo.net/SDL_tutorials/lesson01/windows/index.php
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
