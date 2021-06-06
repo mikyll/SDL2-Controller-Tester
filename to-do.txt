@@ -1,2 +1,2 @@
-aggiungere suoni quando un joystick si connette o disconnette?
-aggiungere test video in cui si muove una pallina e vibra quando cerca di uscire dai bordi
+-add sounds when connecting or disconnecting a device;
+-add the graphic interface (which shows text for the input and a small interactive simulation, where you can move a 2D object).
