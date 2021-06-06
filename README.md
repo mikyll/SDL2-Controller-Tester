@@ -71,7 +71,7 @@ This little application has been made while I was attending a tutorial to make g
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#sdl2-installation">SDL2 Installation</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
