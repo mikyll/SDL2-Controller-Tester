@@ -108,7 +108,6 @@ typedef struct {
 After setting up the structure, we proceed with SDL initialization by calling `initSDL()` and we set up a function to be called when the program ends, with `atexit()`.
 Once the initialization is done, we start the actual main loop, where we call doInput() and check if the vibration is enabled to play the rumble support.
 `SDL_Delay(16)` makes the program wait for 16 milliseconds. We do that to limit the loop to around 62 frames per second and also prevent the application from running at full tilt and consuming far too much CPU time.
-</details>
 
 #### Vibration
 <pre>
@@ -123,6 +122,7 @@ The joystick vibration is enabled when we pressing 2 specific buttons at the sam
 To do this we use the `app.rumble` array: each element corresponds to a joystick (the index is the same for the different arrays) and it's initially set to 0;
 when button 0 or 3 is pressed, we increment the element corresponding to the joystick that sent the event by 1, and we decrement it when the button is released;
 when `app.rumble` value is 2, since a button cannot be pressed multiple times without releasing it, we know both 0 and 3 are pressed and we can enable the vibration.
+</details>
 
 ### Initialization (init.c)
 <details>
