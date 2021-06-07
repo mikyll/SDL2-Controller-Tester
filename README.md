@@ -158,9 +158,9 @@ For more detailed information, please refer to the [Documentation](https://githu
 See the [open issues](https://github.com/mikyll/SDL2-Controller-Tester/issues) for the full list of proposed features (and known issues).
 
 ### Open Issues
-* Haptic rumble initialization problem when connecting a new device at runtime.
 
 ### Future developments
+* Add SDL_JoyBallEvent and SDL_JoyHatEvent events in doInput(). 
 * Sound effects when connecting or disconnecting a device.
 * GUI with text for details.
 * Interactive demo.
