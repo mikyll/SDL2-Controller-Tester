@@ -194,6 +194,7 @@ void doInput(void)
 			case SDL_JOYDEVICEADDED:
 				doJoystickAdded(&event.jdevice);
 				break;
+				
 			case SDL_JOYDEVICEREMOVED:
 				doJoystickRemoved(&event.jdevice);
 				break;
