@@ -1,15 +1,6 @@
-
 # Documentation
 
-The project allows to test the input of a controller, printing on the standard output the button code (integer) and .
-Rileva input di bottoni e leve analogiche che si muovono su diversi "assi";
-rileva connessione e disconnessione di controller diversi;
-se il controller dispone di motorini per la vibrazione, permette di testare la vibrazione.
-<!--1. Connect the controller via cable.
-2. Run the application.
-3. Spam buttons.
-4. Press SELECT (0) and START (3) at the same time to make the controller rumble.-->
-<br/>
+The project allows to test the input of a controller, printing on the standard output the button code (integer) and the value on different axis in case of the analogic controls. It also detect when a controller is connected or disconnected and it allows to test the rumble support, if the controller has one.
 <p align="center">
 	<a href="https://github.com/mikyll/SDL2-Controller-Tester">Home page</a>
 </p>
@@ -31,7 +22,8 @@ se il controller dispone di motorini per la vibrazione, permette di testare la v
 		<li><a href="#references">References</a>
 			<ul><a href="#documentation">Documentation</a></ul>
 			<ul><a href="#github-repositories">GitHub Repositories</a></ul>
-			<ul><a href="#forum">Forum</a></ul>
+			<ul><a href="#tutorials">Tutorials</a></ul>
+			<ul><a href="#extra">Extra</a></ul>
 		</li>
 	</ol>
 </details>
@@ -84,7 +76,7 @@ If MinGW and SDL2 are correctly installed, open a cmd window in the root directo
 
 
 ## Code
-
+https://wiki.libsdl.org/SDL_PollEvent
 ### Initialization
 <details>
 </details>
@@ -102,19 +94,18 @@ If MinGW and SDL2 are correctly installed, open a cmd window in the root directo
 ## References
 	
 ### Documentation
-<!--* <a href="https://docs.unity3d.com/Manual/index.html">Unity Manual</a>
-* <a href="https://docs.unity3d.com/Packages/com.unity.entities@0.17">Unity Entities</a>
-* <a href="https://docs.unity3d.com/Packages/com.unity.physics@0.6">Unity Physics</a>
-* <a href="https://docs.unity3d.com/Packages/com.unity.netcode@0.6">Unity NetCode</a>
-* <a href="https://youtube.com/playlist?list=PLX2vGYjWbI0S1wHRTyDiPtKLEP-->
+* [SDL Joystick Support](https://wiki.libsdl.org/CategoryJoystick)
+* [SDL Joystick Input Handling](https://www.libsdl.org/release/SDL-1.2.15/docs/html/guideinput.html)
+* [SDL_Event](https://wiki.libsdl.org/SDL_Event), [SDL_JoyButtonEvent](https://wiki.libsdl.org/SDL_JoyButtonEvent), [SDL_JoyAxisEvent](https://wiki.libsdl.org/SDL_JoyAxisEvent), [SDL_JoyDeviceEvent](https://wiki.libsdl.org/SDL_JoyDeviceEvent)
 
 ### GitHub Repositories
-<!--* <a href="https://github.com/Unity-Technologies/DOTSSample">DOTS Sample</a> - a third-person shooter demo showcasing the various new DOTS technologies in action together (including Unity Physics, NetCode, Hybrid Renderer, and Conversion Workflow).
-* <a href="https://github.com/Unity-Technologies/EntityComponentSystemSamples">EntityComponentSystemSamples</a> - it contains some sub-repository, including UnityPhysicsSamples, with useful examples, demos and use cases.
-* <a href="https://github.com/Unity-Technologies/DOTS-training-samples">DOTS training samples</a> - it contains small simulations/games implemented in classic (non-DOTS) Unity. It's a useful repository for training using DOTS.
-* <a href="https://github.com/Unity-Technologies/multiplayer">Unity Real-time Multiplayer Alpha</a> - it contains an example project that uses NetCode to implement the networking.
-* <a href="https://github.com/Unity-Technologies/FPSSample">FPS Sample</a> - an obsolete but interesting project.
-* <a href="https://github.com/UnityTechnologies/AngryBots_ECS">AngryBots ECS</a> - simple third-person shooter, which shows improvements in gameplay when switching to DOTS implementation.-->
+* [SDL official repository](https://github.com/libsdl-org/SDL)
+* [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL_joystick.h)
+* [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL_haptic.h)
 
-### Forum
-<!--Click <a href="https://forum.unity.com/forums/data-oriented-technology-stack.147/">here</a> to visit the forum.-->
+### Tutorials
+* [LazyFoo](https://lazyfoo.net/) - [SDL2 installation guide](https://lazyfoo.net/tutorials/SDL/01_hello_SDL/windows/mingw/index.php) and many other useful [SDL tutorial](https://lazyfoo.net/tutorials/SDL/index.php).
+* [Parallel Realities ](https://www.parallelrealities.co.uk/) - wonderful [C game tutorials](https://www.parallelrealities.co.uk/tutorials/) (starting from SDL basics).
+
+### Extra
+* [SDL Game Controller Support](https://wiki.libsdl.org/CategoryGameController)
