@@ -182,7 +182,7 @@ Contributions are what make the open source community such an amazing place to b
 <!-- LICENSE -->
 ## License
 
-Distributed under the GNU v3.0 License. See `[LICENSE](https://github.com/mikyll/SDL2-Controller-Tester/blob/main/LICENSE)` for more information.
+Distributed under the GNU v3.0 License. See [`LICENSE`](https://github.com/mikyll/SDL2-Controller-Tester/blob/main/LICENSE) for more information.
 
 
 
