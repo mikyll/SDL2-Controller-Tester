@@ -54,11 +54,19 @@ void initSDL(void)
 		if(SDL_HapticRumbleSupported(app.haptics[i]) < 0)
 		{
 			fprintf(stderr, "Error: Joystick #%i doesn't support rumble. %s\n", i, SDL_GetError());
+			SDL_HapticClose(app.haptics[i]);
+			app.haptics[i] = NULL;
 			continue;
 		}
 		
 		// Initialize a haptic device for simple rumble playback
-		SDL_HapticRumbleInit(app.haptics[i]);
+		if(SDL_HapticRumbleInit(app.haptics[i]) < 0)
+		{
+			fprintf(stderr, "Error: Joystick #%i haptic rumble initialization failed. %s\n\n", i, SDL_GetError());
+			SDL_HapticClose(app.haptics[i]);
+			app.haptics[i] = NULL;
+			continue;
+		}
 		fprintf(stdout, "  Haptic rumble:\tenabled\n\n");
 	}
 }
