@@ -23,6 +23,8 @@ int main(int argc, char *argv[])
 			if(app.haptics[i] != NULL && app.rumble[i] < 2)
 				SDL_HapticRumbleStop(app.haptics[i]);
 		}
+		
+		SDL_Delay(16);
 	}
 
 	return 0;
