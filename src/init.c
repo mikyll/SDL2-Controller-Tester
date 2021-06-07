@@ -17,6 +17,7 @@ void initSDL(void)
 	
 	/* according to the docs this is needed to automatically receive joystick events, but it works fine 
 	even without, so it's probably already enabled by default. */	
+	SDL_JoystickEventState(SDL_ENABLE);
 	
 	// joysticks opening
 	/* SDL_gamecontroller.h (https://www.libsdl.org/release/SDL-1.2.15/docs/html/joystick.html,
@@ -60,8 +61,6 @@ void initSDL(void)
 		SDL_HapticRumbleInit(app.haptics[i]);
 		fprintf(stdout, "  Haptic rumble:\tenabled\n\n");
 	}
-	SDL_JoystickEventState(SDL_ENABLE);
-	
 }
 
 // clean joysticks and haptic stuff

@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 	
 	atexit(cleanup);
 	
-	fprintf(stdout, "USAGE:\nConnect the joystick and press the buttons to see which events are generated and the related button code. To enable the rumble (only available if the device supports haptic), press 'select' and 'start' at the same time.\n\n");
+	//fprintf(stdout, "USAGE:\nConnect the joystick and press the buttons to see which events are generated and the related button code. To enable the rumble (only available if the device supports haptic), press 'select' and 'start' at the same time.\n\n");
 	
 	while (1)
 	{
