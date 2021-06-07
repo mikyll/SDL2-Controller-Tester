@@ -143,11 +143,12 @@ Otherwise download the source code from [there](https://www.libsdl.org/release/S
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-To use the application, simply connect one or more joystick via cable and run the executable. Each controller input will print on the standard output device the joystick ID and the button code or the direction in case of the analogic levers.
-To make the joystick rumble press the button 0 and 3 (respectively SELECT and START in the case of a PS3 controller) at the same time.
-The application even shows when a controlles is disconnected or when a new one is connected.
+1. Connect the controller via cable.
+2. Run the application.
+3. Spam buttons.
+4. Press the button 0 and 3 (respectively SELECT and START in the case of a PS3 controller) at the same time to make the controller vibrate.
 
-for more detailed information, please refer to the [Documentation](https://github.com/mikyll/SDL2-Controller-Tester/blob/main/Documentation/Prototype%20Documentation.md).
+For more detailed information, please refer to the [Documentation](https://github.com/mikyll/SDL2-Controller-Tester/blob/main/Documentation/Prototype%20Documentation.md).
 
 
 
