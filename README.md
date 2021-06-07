@@ -164,6 +164,7 @@ See the [open issues](https://github.com/mikyll/SDL2-Controller-Tester/issues) f
 * Sound effects when connecting or disconnecting a device.
 * GUI with text for details.
 * Interactive demo.
+* Use [SDL Game Controller](https://wiki.libsdl.org/CategoryGameController) support.
 
 
 <!-- CONTRIBUTING -->
