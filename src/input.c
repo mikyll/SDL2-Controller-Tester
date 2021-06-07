@@ -10,7 +10,7 @@ void doJoystickAxisMotion(SDL_JoyAxisEvent *event)
 	{
 		if(event->axis == 0) 
 		{
-			fprintf(stdout, "[%zu] SDL_JOYAXISMOTION\n  Joystick:\t%i(%i)\n  Axis:\t\t%i (ANALOG_L)\n  Value:\t%i ", event->timestamp, i, event->which, event->axis, event->value);
+			fprintf(stdout, "[%zu] SDL_JOYAXISMOTION\n  Joystick:\t#%i(%i)\n  Axis:\t\t%i (ANALOG_L)\n  Value:\t%i ", event->timestamp, i, event->which, event->axis, event->value);
 			if(event->value < 0)
 				fprintf(stdout, "(LEFT)\n\n");
 			else
@@ -19,7 +19,7 @@ void doJoystickAxisMotion(SDL_JoyAxisEvent *event)
 
 		if(event->axis == 1) 
 		{
-			fprintf(stdout, "[%zu] SDL_JOYAXISMOTION\n  Joystick:\t%i(%i)\n  Axis:\t\t%i (ANALOG_L)\n  Value:\t%i ", event->timestamp, i, event->which, event->axis, event->value);
+			fprintf(stdout, "[%zu] SDL_JOYAXISMOTION\n  Joystick:\t#%i(%i)\n  Axis:\t\t%i (ANALOG_L)\n  Value:\t%i ", event->timestamp, i, event->which, event->axis, event->value);
 			if(event->value < 0)
 				fprintf(stdout, "(UP)\n\n");
 			else
@@ -27,7 +27,7 @@ void doJoystickAxisMotion(SDL_JoyAxisEvent *event)
 		}
 		if(event->axis == 2) 
 		{
-			fprintf(stdout, "[%zu] SDL_JOYAXISMOTION\n  Joystick:\t%i(%i)\n  Axis:\t\t%i (ANALOG_R)\n  Value:\t%i ", event->timestamp, i, event->which, event->axis, event->value);
+			fprintf(stdout, "[%zu] SDL_JOYAXISMOTION\n  Joystick:\t#%i(%i)\n  Axis:\t\t%i (ANALOG_R)\n  Value:\t%i ", event->timestamp, i, event->which, event->axis, event->value);
 			if(event->value < 0)
 				fprintf(stdout, "(LEFT)\n\n");
 			else
@@ -36,7 +36,7 @@ void doJoystickAxisMotion(SDL_JoyAxisEvent *event)
 
 		if(event->axis == 3) 
 		{
-			fprintf(stdout, "[%zu] SDL_JOYAXISMOTION\n  Joystick:\t%i(%i)\n  Axis:\t\t%i (ANALOG_R)\n  Value:\t%i ", event->timestamp, i, event->which, event->axis, event->value);
+			fprintf(stdout, "[%zu] SDL_JOYAXISMOTION\n  Joystick:\t#%i(%i)\n  Axis:\t\t%i (ANALOG_R)\n  Value:\t%i ", event->timestamp, i, event->which, event->axis, event->value);
 			if(event->value < 0)
 				fprintf(stdout, "(UP)\n\n");
 			else
@@ -48,14 +48,14 @@ void doJoystickAxisMotion(SDL_JoyAxisEvent *event)
 void doJoystickButtonDown(SDL_JoyButtonEvent *event)
 {
 	int i = getJoyIndex(event->which);
-	fprintf(stdout, "[%zu] SDL_JOYBUTTONDOWN\n  Joystick:\t%i(%i)\n  Button:\t%i\n\n", event->timestamp, i, event->which, event->button);
+	fprintf(stdout, "[%zu] SDL_JOYBUTTONDOWN\n  Joystick:\t#%i(%i)\n  Button:\t%i\n\n", event->timestamp, i, event->which, event->button);
 	
 	// rumble
 	if(app.haptics[i] != NULL && (event->button == 0 || event->button == 3)) 
 	{
 		app.rumble[i]++;
 		if(app.rumble[i] == 2)
-			fprintf(stdout, "[%zu] RUMBLE_ON\n  Joystick:\t%i(%i)\n\n", event->timestamp, i, event->which);
+			fprintf(stdout, "[%zu] RUMBLE_ON\n  Joystick:\t#%i(%i)\n\n", event->timestamp, i, event->which);
 	}
 }
 
@@ -63,13 +63,13 @@ void doJoystickButtonUp(SDL_JoyButtonEvent *event)
 {
 	int i = getJoyIndex(event->which);
 	
-	fprintf(stdout, "[%zu] SDL_JOYBUTTONUP\n  Joystick:\t%i(%i)\n  Button:\t%i\n\n", event->timestamp, i, event->which, event->button);
+	fprintf(stdout, "[%zu] SDL_JOYBUTTONUP\n  Joystick:\t#%i(%i)\n  Button:\t%i\n\n", event->timestamp, i, event->which, event->button);
 	
 	// rumble
 	if(app.haptics[i] != NULL && (event->button == 0 || event->button == 3)) 
 	{
 		if(app.rumble[i] == 2)
-			fprintf(stdout, "[%zu] RUMBLE_OFF\n  Joystick:\t%i(%i)\n\n", event->timestamp, i, event->which);
+			fprintf(stdout, "[%zu] RUMBLE_OFF\n  Joystick:\t#%i(%i)\n\n", event->timestamp, i, event->which);
 		app.rumble[i]--;
 	}
 }
@@ -141,6 +141,8 @@ void doJoystickAdded(SDL_JoyDeviceEvent *event)
 		return;
 	}
 	fprintf(stdout, "  Haptic rumble:\tenabled\n\n");
+	
+	fprintf(stdout, "Joystick currently attached: %i.\n\n", SDL_NumJoysticks());
 }
 
 void doJoystickRemoved(SDL_JoyDeviceEvent *event)
