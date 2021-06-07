@@ -26,19 +26,6 @@ int main(int argc, char *argv[])
 				SDL_HapticRumbleStop(app.haptics[i]);
 		}
 		
-		/*for(i = 0; i < MAX_NUM_JOYSTICKS; i++)
-		{
-			printf("%d) ", i);
-			
-			if(app.joysticks[i] != NULL)
-				printf("j=%d,\t", i);
-			else printf("j=NULL,\t");
-			if(app.haptics[i] != NULL)
-				printf("h=%d,\t", i);
-			else printf("h=NULL,\t");
-			printf("r=%d,\t", app.rumble[i]);
-			printf("c=%d\n", app.connected);
-		}*/
 		SDL_Delay(16);
 	}
 
