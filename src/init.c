@@ -5,7 +5,7 @@ void initSDL(void)
 	int i;
 	
 	// Initializing SDL with Joystick support (Joystick, game controller and haptic subsystems)
-	if(SDL_Init( SDL_INIT_JOYSTICK | SDL_INIT_HAPTIC ) < 0) // SDL_INIT_GAMECONTROLLER flag for gamecontroller.h 
+	if(SDL_Init( SDL_INIT_JOYSTICK | SDL_INIT_HAPTIC ) < 0)
 	{
 		fprintf(stderr, "Error: Couldn't initialize SDL. %s\n", SDL_GetError());
 		exit(1);
@@ -15,15 +15,10 @@ void initSDL(void)
 	if(SDL_NumJoysticks() == 0)
 		fprintf(stdout, "Check the joystick is properly connected.\nIf the problem persist, you can check the connected USB device with 'lsusb' and the logs in /var/logs/syslog\n"); 
 	
-	/* according to the docs this is needed to automatically receive joystick events, but it works fine 
-	even without, so it's probably already enabled by default. */	
 	SDL_JoystickEventState(SDL_ENABLE);
 	
-	// joysticks opening
-	/* SDL_gamecontroller.h (https://www.libsdl.org/release/SDL-1.2.15/docs/html/joystick.html,
-	https://github.com/libsdl-org/SDL/blob/main/include/SDL_gamecontroller.h,
-	https://stackoverflow.com/questions/50022316/what-is-sdl-joystick-and-what-is-sdl-gamecontroller-what-are-the-relationships - difference between game controller and joystick)*/
-	for(i = 0; i < SDL_NumJoysticks() && i < MAX_NUM_JOYSTICKS; i++)
+	// joysticks and haptic devices opening
+	/*for(i = 0; i < SDL_NumJoysticks() && i < MAX_NUM_JOYSTICKS; i++)
 	{
 		if((app.joysticks[i] = SDL_JoystickOpen(i)) == NULL)
 		{
@@ -31,7 +26,7 @@ void initSDL(void)
 			continue;
 		}
 		
-		fprintf(stdout, "Opened Joystick:\t#%i\n", i);
+		fprintf(stdout, "Opened Joystick:\t#%i\n", SDL_JoystickInstanceID(app.joysticks[i]));
 		fprintf(stdout, "  Name:\t\t\t%s\n", SDL_JoystickName(app.joysticks[i]));
 		fprintf(stdout, "  Number of Axes:\t%i\n", SDL_JoystickNumAxes(app.joysticks[i]));
 		fprintf(stdout, "  Number of Buttons:\t%i\n", SDL_JoystickNumButtons(app.joysticks[i]));
@@ -68,7 +63,7 @@ void initSDL(void)
 			continue;
 		}
 		fprintf(stdout, "  Haptic rumble:\tenabled\n\n");
-	}
+	}*/
 }
 
 // clean joysticks and haptic stuff
