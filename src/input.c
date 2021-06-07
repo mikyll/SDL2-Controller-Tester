@@ -142,7 +142,7 @@ void doJoystickAdded(SDL_JoyDeviceEvent *event)
 	}
 	fprintf(stdout, "  Haptic rumble:\tenabled\n\n");
 	
-	fprintf(stdout, "Joystick currently attached: %i.\n\n", SDL_NumJoysticks());
+	fprintf(stdout, "Joystick currently connected: %i.\n\n", SDL_NumJoysticks());
 }
 
 void doJoystickRemoved(SDL_JoyDeviceEvent *event)
@@ -163,7 +163,7 @@ void doJoystickRemoved(SDL_JoyDeviceEvent *event)
 	
 	app.rumble[i] = 0;
 	app.connected--;
-	fprintf(stdout, "Joystick currently attached: %i.\n\n", SDL_NumJoysticks());
+	fprintf(stdout, "Joystick currently connected: %i.\n\n", SDL_NumJoysticks());
 }
 
 void doInput(void)
