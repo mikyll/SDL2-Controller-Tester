@@ -200,9 +200,6 @@ Project Link: [https://github.com/mikyll/SDL2-Controller-Tester](https://github.
 * [Parallel Realities](https://www.parallelrealities.co.uk) for the lovely and super detailed tutorials involving game development in C using SDL2, from which I "stole" (actually I bought some of the tutorial, they're extremely cheap -just 1$ each one-) the project structure and the makefile.
 * [Othneil Drew](https://github.com/othneildrew) for the amazing [README template](https://github.com/othneildrew/Best-README-Template).
 
-## References
-* SDL2 installation tutorial (a bit outdated, so be careful) - [LazyFoo SDL installation](http://lazyfoo.net/SDL_tutorials/lesson01/windows/index.php)
-* Wonderful C game tutorials (starting from SDL basics) - [Parallel Realities Tutorials](https://www.parallelrealities.co.uk/)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
