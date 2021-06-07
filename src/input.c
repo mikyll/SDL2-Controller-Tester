@@ -6,37 +6,37 @@ void doJoystickAxisMotion(SDL_JoyAxisEvent *event)
 	{
 		if(event->axis == 0) 
 		{
-			printf("[%zu] SDL_JOYAXISMOTION (ANALOG_L)\n  Joystick:\t%i\n", event->timestamp, event->which);
+			fprintf(stdout, "[%zu] SDL_JOYAXISMOTION\n  Joystick:\t%i\n  Axis:\t\t%i (ANALOG_L)\n  Value:\t%i ", event->timestamp, event->which, event->axis, event->value);
 			if(event->value < 0)
-				printf("  Direction:\tleft\n\n");
+				fprintf(stdout, "(LEFT)\n\n");
 			else
-				printf("  Direction:\tright\n\n");
+				fprintf(stdout, "(RIGHT)\n\n");
 		}
 
 		if(event->axis == 1) 
 		{
-			printf("[%zu] SDL_JOYAXISMOTION (ANALOG_L)\n  Joystick:\t%i\n", event->timestamp, event->which);
+			fprintf(stdout, "[%zu] SDL_JOYAXISMOTION\n  Joystick:\t%i\n  Axis:\t\t%i (ANALOG_L)\n  Value:\t%i ", event->timestamp, event->which, event->axis, event->value);
 			if(event->value < 0)
-				printf("  Direction:\tup\n\n");
+				fprintf(stdout, "(UP)\n\n");
 			else
-				printf("  Direction:\tdown\n\n");
+				fprintf(stdout, "(DOWN)\n\n");
 		}
 		if(event->axis == 2) 
 		{
-			printf("[%zu] SDL_JOYAXISMOTION (ANALOG_R)\n  Joystick:\t%i\n", event->timestamp, event->which);
+			fprintf(stdout, "[%zu] SDL_JOYAXISMOTION\n  Joystick:\t%i\n  Axis:\t\t%i (ANALOG_R)\n  Value:\t%i ", event->timestamp, event->which, event->axis, event->value);
 			if(event->value < 0)
-				printf("  Direction:\tleft\n\n");
+				fprintf(stdout, "(LEFT)\n\n");
 			else
-				printf("  Direction:\tright\n\n");
+				fprintf(stdout, "(RIGHT)\n\n");
 		}
 
 		if(event->axis == 3) 
 		{
-			printf("[%zu] SDL_JOYAXISMOTION (ANALOG_R)\n  Joystick:\t%i\n", event->timestamp, event->which);
+			fprintf(stdout, "[%zu] SDL_JOYAXISMOTION\n  Joystick:\t%i\n  Axis:\t\t%i (ANALOG_R)\n  Value:\t%i ", event->timestamp, event->which, event->axis, event->value);
 			if(event->value < 0)
-				printf("  Direction:\tup\n\n");
+				fprintf(stdout, "(UP)\n\n");
 			else
-				printf("  Direction:\tdown\n\n");
+				fprintf(stdout, "(DOWN)\n\n");
 		}
 	}
 }
