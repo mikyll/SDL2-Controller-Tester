@@ -92,7 +92,7 @@ This little application has been made while I was attending a tutorial to make g
 	Demo video
 </p>
 
-https://user-images.githubusercontent.com/56556806/121173260-e33c7700-c858-11eb-94a0-2544a72af3d9.mp4
+<!--https://user-images.githubusercontent.com/56556806/121173260-e33c7700-c858-11eb-94a0-2544a72af3d9.mp4-->
 
 
 ### Built With
