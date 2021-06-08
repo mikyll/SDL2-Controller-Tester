@@ -87,10 +87,11 @@ This little application has been made while I was attending a tutorial to make g
 ## About The Project
 
 <p align="center">
-	<a href="https://www.youtube.com/watch?v=phKoKU2lYFs" target="_blank"><img src="https://github.com/mikyll/SDL2-Controller-Tester/blob/main/gfx/Play1.png" alt="Demo Video" width="480" height="360" border="10" /></a>
+	<a href="https://www.youtube.com/watch?v=phKoKU2lYFs" target="_blank"><img src="https://github.com/mikyll/SDL2-Controller-Tester/blob/main/gfx/Play Thumbnail.png" alt="Demo Video" width="480" height="360" border="10" /></a>
 	<br/>
 	Demo video
 </p>
+
 <!--https://user-images.githubusercontent.com/56556806/121173260-e33c7700-c858-11eb-94a0-2544a72af3d9.mp4-->
 
 
