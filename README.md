@@ -86,7 +86,10 @@ This little application has been made while I was attending a tutorial to make g
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Demo GIF
+
+https://user-images.githubusercontent.com/56556806/121163946-7ffa1700-c84f-11eb-9283-691d8b6f6ec3.mp4
+
+
 
 ### Built With
 
