@@ -86,10 +86,13 @@ This little application has been made while I was attending a tutorial to make g
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+<p align="center">
+	<a href="https://www.youtube.com/watch?v=phKoKU2lYFs" target="_blank"><img src="https://github.com/mikyll/SDL2-Controller-Tester/blob/main/gfx/Play1.png" alt="Demo Video" width="480" height="360" border="10" /></a>
+	<br/>
+	Demo video
+</p>
+<!--https://user-images.githubusercontent.com/56556806/121173260-e33c7700-c858-11eb-94a0-2544a72af3d9.mp4-->
 
-<!--https://youtube.com/embed/phKoKU2lYFs
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BNMrevfB6Q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
 
 ### Built With
 
