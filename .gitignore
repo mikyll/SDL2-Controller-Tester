@@ -1,2 +1,6 @@
 # ignores the useless video
 /gfx/Video*
+
+/gfx/Thumbnail PNG.png
+/gfx/SDL Logo.png
+/gfx/YouTube Thumbnail.png
