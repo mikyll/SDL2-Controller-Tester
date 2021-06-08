@@ -20,10 +20,12 @@ The project allows to test the input of a controller, printing on the standard o
 			</ul>
 		</li>
 		<li><a href="#references">References</a>
-			<ul><a href="#documentation">Documentation</a></ul>
-			<ul><a href="#github-repositories">GitHub Repositories</a></ul>
-			<ul><a href="#tutorials">Tutorials</a></ul>
-			<ul><a href="#extra">Extra</a></ul>
+			<ul>
+				<li><a href="#documentation">Documentation</a></li>
+				<li><a href="#github-repositories">GitHub Repositories</a></li>
+				<li><a href="#tutorials">Tutorials</a></li>
+				<li><a href="#extra">Extra</a></li>
+			</ul>
 		</li>
 	</ol>
 </details>
