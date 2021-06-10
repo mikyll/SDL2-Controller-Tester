@@ -43,7 +43,7 @@
   <p align="center">
 This little application has been made while I was attending a tutorial to make games in C using SDL2. Since my purpose will be to implement a game with both keyboard or controller input, I wanted to test which of my PS3 controller feature I could use (spoiler: each one).</i>
 <br />
-	<a href="https://github.com/mikyll/SDL2-Controller-Tester/blob/main/Documentation.md"><strong>Explore the docs »</strong></a>
+	<a href="https://github.com/mikyll/SDL2-Controller-Tester/blob/main/docs/Documentation.md"><strong>Explore the docs »</strong></a>
 	<br />
 	<br />
 	<a href="#demo">View Demo</a>
