@@ -46,9 +46,9 @@ This little application has been made while I was attending a tutorial to make g
 	<a href="https://github.com/mikyll/SDL2-Controller-Tester/blob/main/Documentation.md"><strong>Explore the docs »</strong></a>
 	<br />
 	<br />
-	<a href="https://github.com/mikyll/SDL2-Controller-Tester/issues">Report Bug</a>
+	<a href="#demo">View Demo</a>
 	·
-	<a href="https://github.com/mikyll/SDL2-Controller-Tester/issues">Request Feature</a>
+	<a href="https://github.com/mikyll/SDL2-Controller-Tester/issues">Report Bug | Request Feature</a>
   </p>
 </p>
 
@@ -86,7 +86,7 @@ This little application has been made while I was attending a tutorial to make g
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<p align="center">
+<p id="demo" align="center">
 	<a href="https://www.youtube.com/watch?v=phKoKU2lYFs" target="_blank"><img src="https://github.com/mikyll/SDL2-Controller-Tester/blob/main/gfx/Play Thumbnail.png" alt="Demo Video" width="480" height="360" border="10" /></a>
 	<br/>
 	Demo video
