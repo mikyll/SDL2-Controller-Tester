@@ -223,6 +223,6 @@ Project Link: [https://github.com/mikyll/SDL2-Controller-Tester](https://github.
 [license-shield]: https://img.shields.io/github/license/mikyll/SDL2-Controller-Tester
 [license-url]: https://github.com/mikyll/SDL2-Controller-Tester/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?logo=linkedin&colorB=0077B5
-[linkedin-url]: https://www.linkedin.com/in/michele-righi-095283195/?locale=it_IT
+[linkedin-url]: https://www.linkedin.com/in/michele-righi/?locale=en_US
 [github-shield]: https://img.shields.io/github/followers/mikyll.svg?style=social&label=Follow
 [github-url]: https://github.com/mikyll
