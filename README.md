@@ -197,7 +197,7 @@ Distributed under the GNU v3.0 License. See [`LICENSE`](https://github.com/mikyl
 <!-- CONTACT -->
 ## Contact
 
-Michele Righi - <!-- [@twitter_handle](https://twitter.com/twitter_handle) - -->righi.michy@gmail.com
+Michele Righi - righi.michele98@gmail.com
 
 Project Link: [https://github.com/mikyll/SDL2-Controller-Tester](https://github.com/mikyll/SDL2-Controller-Tester)
 
