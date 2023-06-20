@@ -118,8 +118,8 @@ To get a local copy up and running follow these simple steps.
 * At least one controller compatible with your OS
 
 ### SDL2 Installation
-#### Linux (Debian)
-The easiest way is to open a terminal and use Advanced Packaging Tool to install only the modules required using `apt-get install libsdl2-dev` or every one using `apt-get install libsdl2-*`.
+#### Linux
+The easiest way is to open a terminal and install the packages required. In Debian-based distributions, use Advanced Packaging Tool by entering `apt-get install libsdl2-dev` or every one using `apt-get install libsdl2-*`. In Fedora-based distributions, enter `sudo dnf install SDL2-devel make gcc`.
 Otherwise download the source code from [there](https://www.libsdl.org/release/SDL2-2.0.14.tar.gz), extract the content and cd to the main directory. Then run  `./configure` to configure the installation, `make all` to compile the source, and finally `make install` to install the package.
 
 #### Windows (MinGW)
@@ -135,8 +135,9 @@ Otherwise download the source code from [there](https://www.libsdl.org/release/S
 1. Clone the repo.
    ```sh
    git clone https://github.com/mikyll/SDL2-Controller-Tester
+   cd SDL2-Controller-Tester
    ```
-2. Install SDL2.
+2. Install SDL2. In Debian-based distributions:
    ```sh
    sudo apt-get install sdl2-*
    ```
