@@ -215,9 +215,9 @@ Project Link: [https://github.com/mikyll/SDL2-Controller-Tester](https://github.
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/mikyll/SDL2-Controller-Tester
 [contributors-url]: https://github.com/mikyll/SDL2-Controller-Tester/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/mikyll/SDL2-Controller-Tester
+[forks-shield]: https://img.shields.io/github/forks/mikyll/SDL2-Controller-Tester?style=flat
 [forks-url]: https://github.com/mikyll/SDL2-Controller-Tester/network/members
-[stars-shield]: https://img.shields.io/github/stars/mikyll/SDL2-Controller-Tester
+[stars-shield]: https://img.shields.io/github/stars/mikyll/SDL2-Controller-Tester?style=flat
 [stars-url]: https://github.com/mikyll/SDL2-Controller-Tester/stargazers
 [issues-shield]: https://img.shields.io/github/issues/mikyll/SDL2-Controller-Tester
 [issues-url]: https://github.com/mikyll/SDL2-Controller-Tester/issues
